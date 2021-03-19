@@ -20,9 +20,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func doneMyButton(_ sender: Any) {
-        helloText.text = "Hello, "+(inputText.text)!+"!"
+        let a = (inputText.text)!
+        if(a.isEmpty){
+            helloText.text = "Hello, You!"
+        }
+        else{
+            helloText.text = "Hello, "+a+"!"
+            inputText.text = ""
+        }
     }
     
     
 }
-
