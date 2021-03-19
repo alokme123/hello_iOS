@@ -22,8 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="doneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4C2-NB-Rlh"/>
-                                    <action selector="doneNewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Kj-Ua-w1i"/>
+                                    <action selector="doneMyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6K-Vo-6Vp"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="msf-XC-zp3">
@@ -44,9 +43,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="doneButton" destination="lav-W1-pYb" id="dsF-ei-DBo"/>
-                        <outlet property="helloText" destination="ydE-mD-cCy" id="wMb-Mx-XXZ"/>
-                        <outlet property="textField" destination="msf-XC-zp3" id="0vm-jO-TTN"/>
+                        <outlet property="helloText" destination="ydE-mD-cCy" id="NtI-lO-KdD"/>
+                        <outlet property="inputText" destination="msf-XC-zp3" id="W4C-S2-83h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

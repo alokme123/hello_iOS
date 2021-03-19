@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    
+    @IBOutlet weak var inputText: UITextField!
     @IBOutlet weak var helloText: UILabel!
     
     override func viewDidLoad() {
@@ -18,8 +19,10 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func doneNewButton(_ sender: Any) {
-        helloText.text = "Hello, "+(textField.text)!
+    @IBAction func doneMyButton(_ sender: Any) {
+        helloText.text = "Hello, "+(inputText.text)!+"!"
     }
+    
+    
 }
 
