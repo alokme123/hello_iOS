@@ -9,23 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    //UI Elements
     @IBOutlet weak var inputText: UITextField!
     @IBOutlet weak var helloText: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after lsoading the view.
-        
-    }
-    
+    //Button onClick Function
     @IBAction func doneMyButton(_ sender: Any) {
-        let a = (inputText.text)!
-        if(a.isEmpty){
-            helloText.text = "Hello, You!"
-        }
+        var name = (inputText.text)!
+        if(name.isEmpty){ name = "You"}
         else{
-            helloText.text = "Hello, "+a+"!"
+            helloText.text = "Hello, \(name)!"
             inputText.text = ""
         }
     }
